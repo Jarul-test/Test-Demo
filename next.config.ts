@@ -3,7 +3,8 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   /* config options here */
   reactStrictMode: true,
-  basePath: '/Test-Demo', // repo name
+  basePath: '/Test-Demo', // repo name,
+  output: 'export'
 };
 
 export default nextConfig;
