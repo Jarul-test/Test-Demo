@@ -5,7 +5,7 @@ const nextConfig: NextConfig = {
   reactStrictMode: true,
   basePath: '/Test-Demo', // repo name,
   output: 'export',
-  assetPrefix: '/Test-Demo/',
+  assetPrefix: './',
 };
 
 export default nextConfig;
