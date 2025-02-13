@@ -1,0 +1,1 @@
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[845],{6610:(e,_,n)=>{(window.__NEXT_P=window.__NEXT_P||[]).push(["/home",function(){return n(4171)}])},4171:(e,_,n)=>{"use strict";n.r(_),n.d(_,{default:()=>u});var s=n(4848);let u=()=>(0,s.jsx)("div",{children:"Home page"})}},e=>{var _=_=>e(e.s=_);e.O(0,[636,593,792],()=>_(6610)),_N_E=e.O()}]);
