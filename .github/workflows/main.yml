@@ -22,16 +22,22 @@ jobs:
         run: npm install
 
       - name: Build Project
-        run: npm run build
-      
+        run: |
+          npm run build || { echo "Build failed"; exit 1; }
+
       - name: Check build output
-        run: ls -la  # Debugging step
+        run: ls -la # Debugging step
+
+      - name: Debug .next existence
+        run: ls -la .next  # Check if .next exists
 
       - name: Upload artifact to enable deployment
         uses: actions/upload-artifact@v4
         with:
           name: production-file
-          path: .next
+          path: |
+            .next
+            .next/**
 
   # Deploy Job
   deploy:
