@@ -1,16 +1,16 @@
-name: Hell world demo
+name: Hello world demo
 
 on:
-  push:
+  push: # Event
     branches:
       - dev
-
+#JOB
 jobs: 
   # Print hello world
   print:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest # Runner
     steps:
       - name: print text
-        run: |
+        run: | # Multiline scripts for step
           echo "Hello world..!",
           echo "This is sample workflow file for dev branch"
