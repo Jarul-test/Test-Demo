@@ -7,7 +7,7 @@ on:
       name:
         description: 'user name for test'
         required: true
-        type: text
+        type: string
  
 jobs:
   log-input:
