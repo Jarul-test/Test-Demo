@@ -11,10 +11,9 @@ on:
  
 jobs:
   log-input:
+    runs-on: ubuntu-latest
     steps:
       - name: log the inputted value
         run: | 
-          echo "Sample workflow demo with inputs..",
-          echo "Inputted user is: $USERNAME"
-    env:
-      USERNAME: ${{ inputs.name }}
+          echo "Sample workflow demo with inputs.."
+          echo "Inputted user is: ${{ inputs.name }}"
