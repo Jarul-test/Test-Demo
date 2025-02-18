@@ -1,0 +1,13 @@
+name: Manual workflow demo
+
+on: workflow_dispatch
+
+jobs:
+  log-text:
+    runs-on: ubuntu-latest
+    steps:
+      - name: log simple text
+        run: echo "🎉 Sample workflow for manual workflow..!"
+      
+      - name: Other log text
+        run: echo "🐧 This job is now running on a server hosted by GitHub..!"
