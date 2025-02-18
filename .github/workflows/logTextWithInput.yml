@@ -1,0 +1,20 @@
+name: Manual workflow demo with input 
+
+on: 
+  workflow_dispatch:
+    inputs:
+      # Name as input 
+      name:
+        description: 'user name for test'
+        required: true
+        type: text
+ 
+jobs:
+  log-input:
+    steps:
+      - name: log the inputted value
+        run: | 
+          echo "Sample workflow demo with inputs..",
+          echo "Inputted user is: $USERNAME"
+    env:
+      USERNAME: ${{ inputs.name }}
