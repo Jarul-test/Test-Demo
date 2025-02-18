@@ -13,4 +13,4 @@ jobs:
       - name: print text
         run: | # Multiline scripts for step
           echo "Hello world..!",
-          echo "This is sample workflow file for dev branch"
+          echo "This is sample workflow file for dev branch..."
