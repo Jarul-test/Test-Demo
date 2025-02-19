@@ -24,10 +24,14 @@ jobs:
           node-version: 20.x
 
       - name: Install dependencies
-        run: npm install
+        run: |
+          npm install
+          echo "🎉 Dependency installed successfully.."
 
       - name: Build and Export Project
-        run: npm run build
+        run: |
+          npm run build
+          echo "🎉 Build succeeded.."
 
       - name: Upload artifact for pages deployment
         uses: actions/upload-pages-artifact@v3
