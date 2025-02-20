@@ -41,6 +41,9 @@ jobs:
   # Deploy Job
   deploy:
     needs: build
+    # We use a separate Github 'environment' called 'github-pages' to
+    # handle the manual approval step. This allows us to have
+    # approval gate for PROD deployment.
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
